@@ -27,4 +27,9 @@ public abstract class Pizza {
     Pizza(Builder<?> builder) {
         toppings = builder.toppings.clone();
     }
+
+    @Override
+    public String toString() {
+        return "Toppings: " + toppings;
+    }
 }

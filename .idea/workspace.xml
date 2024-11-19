@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56ff22d2-0f3f-4b8a-910d-51171b6ee737" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/Calzone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/NyPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/enforcesingleton/ElvisEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/enforcesingleton/ElvisPublicFinalField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/enforcesingleton/ElvisStaticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/BigDecimalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/DataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/DateFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/ExecutorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/ImmutableListFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/ListFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/OptionalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/StaticFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticfactory/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/Calzone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/Calzone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/NyPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/NyPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constructorpatterns/Pizza.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +89,8 @@
       <workItem from="1731580341286" duration="5616000" />
       <workItem from="1731907941396" duration="4686000" />
       <workItem from="1731912736909" duration="6000" />
+      <workItem from="1731941954824" duration="428000" />
+      <workItem from="1732031308041" duration="4413000" />
     </task>
     <servers />
   </component>
