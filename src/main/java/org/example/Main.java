@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.constructorpatterns.*;
+import org.example.enforcenoninstantiability.UtilityClass;
 import org.example.enforcesingleton.ElvisEnum;
 import org.example.enforcesingleton.ElvisPublicFinalField;
 import org.example.enforcesingleton.ElvisStaticFactory;
@@ -62,7 +63,23 @@ public class Main {
         DataSource ds = DataSourceFactory.createDataSource();
         System.out.println(ds); // Example usage
 
-        //CONSTRUCTORPATTERNS
+        //ENFORCE NONINSTANTIABILITY
+        System.out.println();
+        System.out.println("ENFORCE NONINSTANTIABILITY");
+        System.out.println();
+        //
+
+        String message = UtilityClass.createDefaultMessage();
+        System.out.println("Message: " + message);
+
+        int[] defaultArray = UtilityClass.createDefaultIntArray();
+        System.out.print("Default Array: ");
+        for (int num : defaultArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        //CONSTRUCTOR PATTERNS
         System.out.println();
         System.out.println("CONSTRUCTOR PATTERNS");
         System.out.println();
@@ -84,7 +101,7 @@ public class Main {
         Calzone calzone = new Calzone.Builder().addTopping(Pizza.Topping.HAM).sauceInside().build();
         System.out.println(calzone);
 
-        //ENFORCESINGLETON
+        //ENFORCE SINGLETON
         System.out.println();
         System.out.println("ENFORCE SINGLETON");
         System.out.println();
