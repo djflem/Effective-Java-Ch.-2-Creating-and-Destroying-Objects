@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.constructorpatterns.*;
+import org.example.depencyinjection.SpellCheckerInjection;
 import org.example.enforcenoninstantiability.UtilityClass;
 import org.example.enforcesingleton.ElvisEnum;
 import org.example.enforcesingleton.ElvisPublicFinalField;
@@ -10,6 +11,7 @@ import org.example.staticfactory.*;
 import javax.sql.DataSource;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
@@ -22,6 +24,7 @@ public class Main {
         System.out.println();
         //
 
+        /*
         LocalDate date = DateFactory.fromEpochMillis(1692278400000L);
         System.out.println(date); // Prints the date in yyyy-MM-dd format
 
@@ -62,22 +65,7 @@ public class Main {
 
         DataSource ds = DataSourceFactory.createDataSource();
         System.out.println(ds); // Example usage
-
-        //ENFORCE NONINSTANTIABILITY
-        System.out.println();
-        System.out.println("ENFORCE NONINSTANTIABILITY");
-        System.out.println();
-        //
-
-        String message = UtilityClass.createDefaultMessage();
-        System.out.println("Message: " + message);
-
-        int[] defaultArray = UtilityClass.createDefaultIntArray();
-        System.out.print("Default Array: ");
-        for (int num : defaultArray) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
+         */
 
         //CONSTRUCTOR PATTERNS
         System.out.println();
@@ -114,5 +102,34 @@ public class Main {
         elvisPublicFinalField.leaveTheBuilding();
         elvisStaticFactory.leaveTheBuilding();
         elvisEnum.leaveTheBuilding();
+
+        //ENFORCE NONINSTANTIABILITY
+        System.out.println();
+        System.out.println("ENFORCE NONINSTANTIABILITY");
+        System.out.println();
+        //
+
+        String message = UtilityClass.createDefaultMessage();
+        System.out.println("Message: " + message);
+
+        int[] defaultArray = UtilityClass.createDefaultIntArray();
+        System.out.print("Default Array: ");
+        for (int num : defaultArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        //DEPENDENCY INJECTION
+        System.out.println();
+        System.out.println("DEPENDENCY INJECTION");
+        System.out.println();
+        //
+
+        // Clients custom dictionary/Lexicon
+        List<String> dotaKnowledgeLexicon = new ArrayList<>();
+        dotaKnowledgeLexicon.add("gg");
+        SpellCheckerInjection spellCheckerInjection = new SpellCheckerInjection(dotaKnowledgeLexicon);
+        System.out.println(spellCheckerInjection.checkWord("gg"));
+        System.out.println(spellCheckerInjection.checkWord("ggez"));
     }
 }
